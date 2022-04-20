@@ -127,7 +127,6 @@ describe("Test Degree Certificated", () => {
     cy.get('div[class="button-items-right clickable"]').click();
 
     cy.get("a").contains("+เพิ่มรายชื่อ").click();
-    cy.wait(1000);
     cy.get("a").contains("+เพิ่มรายชื่อ").click();
     cy.get("select").eq(0).select("2");
     cy.get('input[placeholder="ชื่อ"]').eq(0).type("ลำดวล");
@@ -144,11 +143,8 @@ describe("Test Degree Certificated", () => {
     cy.get('div[class="button-items-right clickable"]').click();
 
     cy.get("a").contains("+เพิ่มรายวิชา").click();
-    cy.wait(1000);
     cy.get("a").contains("+เพิ่มรายวิชา").click();
-    cy.wait(1000);
     cy.get("a").contains("+เพิ่มรายวิชา").click();
-    cy.wait(1000);
     cy.get('textarea[placeholder="ระบุหมวดวิชา"]')
       .eq(0)
       .type("องค์ความรู้พื้นฐานทางวิทยาศาสตร์");
@@ -475,5 +471,13 @@ describe("Test Degree Certificated", () => {
     cy.get('div[class="button-items-right clickable"]')
       .contains("ยืนยันการอัปโหลดเอกสาร ")
       .click();
+    cy.wait(5000);
+  });
+
+  it("Check documents", () => {
+    cy.visit("/cmslogin");
+    cy.get('input[placeholder="รหัสพนักงาน"]').type("999999");
+    cy.get('input[placeholder="รหัสผ่าน"]').type("123456");
+    cy.get('button[type="submit"]').contains(" เข้าสู่ระบบ ").click();
   });
 });
