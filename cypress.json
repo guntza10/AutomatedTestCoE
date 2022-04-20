@@ -1,0 +1,10 @@
+{
+  "env": {
+    "MAILOSAUR_API_KEY": "lvIxcLEBhevpQ21H",
+    "serverId": "yvd3lbj4",
+    "serverDomain": "yvd3lbj4.mailosaur.net"
+  },
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "baseUrl": "https://uatcoe.codenation.me"
+}

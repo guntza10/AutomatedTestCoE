@@ -1,0 +1,23 @@
+{
+  "name": "automatedtestcoe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guntza10/AutomatedTestCoE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guntza10/AutomatedTestCoE/issues"
+  },
+  "homepage": "https://github.com/guntza10/AutomatedTestCoE#readme",
+  "devDependencies": {
+    "cypress": "^9.5.4"
+  }
+}
