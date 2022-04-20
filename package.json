@@ -19,5 +19,8 @@
   "homepage": "https://github.com/guntza10/AutomatedTestCoE#readme",
   "devDependencies": {
     "cypress": "^9.5.4"
+  },
+  "dependencies": {
+    "cypress-file-upload": "^5.0.8"
   }
 }
