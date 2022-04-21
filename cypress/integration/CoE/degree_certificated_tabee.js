@@ -26,7 +26,7 @@ describe("Test Degree Certificated", () => {
     cy.get('div[class="cms-tabee-textbox-ourline"]')
       .eq(1)
       .then((div) => {
-        cy.wrap(div).get("input").eq(2).type("0632122444 ");
+        cy.wrap(div).get("input").eq(2).type("0632122444");
       });
     cy.get('div[class="button-items-right clickable"]').click();
     cy.wait(1000);
@@ -166,22 +166,47 @@ describe("Test Degree Certificated", () => {
       });
     cy.get('div[class="button-items-right clickable"]').click();
     cy.wait(1000);
-    cy.get('a').contains("+เพิ่มรายชื่อ").click();
-    cy.get('a').contains("+เพิ่มรายชื่อ").click();
-    cy.get('select').eq(0).select("นาย");
+    cy.get("a").contains("+เพิ่มรายชื่อ").click();
+    cy.get("a").contains("+เพิ่มรายชื่อ").click();
+    cy.get("select").eq(0).select("นาย");
     cy.get('input[placeholder="ชื่อ"]').eq(0).type("ลำดวล");
     cy.get('input[placeholder="นามสกุล"]').eq(0).type("กลิ่นหอม");
     cy.get('input[placeholder="หมายเลขโทรศัพท์"]').eq(0).type("0891113333 ");
     cy.get('input[placeholder="อีเมล์"]').eq(0).type("lumduan@gmail.com");
-    cy.get('select').eq(1).select("ผู้รับผิดชอบหลักสูตรโดยตรง");
+    cy.get("select").eq(1).select("ผู้รับผิดชอบหลักสูตรโดยตรง");
 
-    cy.get('select').eq(2).select("นาง");
+    cy.get("select").eq(2).select("นาง");
     cy.get('input[placeholder="ชื่อ"]').eq(1).type("ลำใย");
     cy.get('input[placeholder="นามสกุล"]').eq(1).type("อร่อย");
     cy.get('input[placeholder="หมายเลขโทรศัพท์"]').eq(1).type("0891114444");
     cy.get('input[placeholder="อีเมล์"]').eq(1).type("lumyai@gmail.com");
-    cy.get('select').eq(3).select("ผู้ประสานงานหลักสูตร");
+    cy.get("select").eq(3).select("ผู้ประสานงานหลักสูตร");
     cy.get('div[class="button-items-right clickable"]').click();
     cy.wait(1000);
+    cy.fixture(`files/test_upload.pdf`, "binary")
+      .then(Cypress.Blob.binaryStringToBlob)
+      .then((fileContent) => {
+        cy.log("fileContent", fileContent);
+        cy.get('input[type="file"]').eq(0).attachFile({
+          fileContent,
+          filePath: "files/test_upload.pdf",
+          encoding: "utf-8",
+          lastModified: new Date().getTime(),
+        });
+      });
+    cy.wait(1000);
+    cy.fixture(`files/test_upload.pdf`, "binary")
+      .then(Cypress.Blob.binaryStringToBlob)
+      .then((fileContent) => {
+        cy.log("fileContent", fileContent);
+        cy.get('input[type="file"]').eq(1).attachFile({
+          fileContent,
+          filePath: "files/test_upload.pdf",
+          encoding: "utf-8",
+          lastModified: new Date().getTime(),
+        });
+      });
+    cy.wait(1000);
+    cy.get('div[class="button-items-right clickable"]').click();
   });
 });
