@@ -127,6 +127,7 @@ describe("Test Degree Certificated", () => {
     cy.get('div[class="button-items-right clickable"]').click();
 
     cy.get("a").contains("+เพิ่มรายชื่อ").click();
+    cy.wait(5000);
     cy.get("a").contains("+เพิ่มรายชื่อ").click();
     cy.get("select").eq(0).select("2");
     cy.get('input[placeholder="ชื่อ"]').eq(0).type("ลำดวล");
@@ -143,7 +144,9 @@ describe("Test Degree Certificated", () => {
     cy.get('div[class="button-items-right clickable"]').click();
 
     cy.get("a").contains("+เพิ่มรายวิชา").click();
+    cy.wait(5000);
     cy.get("a").contains("+เพิ่มรายวิชา").click();
+    cy.wait(5000);
     cy.get("a").contains("+เพิ่มรายวิชา").click();
     cy.get('textarea[placeholder="ระบุหมวดวิชา"]')
       .eq(0)
@@ -504,196 +507,172 @@ describe("Test Degree Certificated", () => {
       .eq(0)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(1)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(2)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(3)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(4)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(5)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(6)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(7)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(8)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(9)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(10)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(11)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(12)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(13)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(14)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(15)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(16)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(17)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(18)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(19)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
     cy.get('div[class="content-container"]')
       .eq(20)
       .find('div[class="card-column-content detail"]')
       .eq(3)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+      .find('label[class="custom-control-label"]')
       .eq(0)
-      .find('input[type="radio"]')
-      .click({ force: true });
+      .click();
 
-    cy.get('div[class="info-container-document-adjunct"]')
-      .eq(0)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+    cy.get('div[id="radio-slots-admin-approve_adjuct_1"]')
+      .find('div[class="wait-approve"]')
       .eq(1)
       .click();
     cy.get("button").contains("บันทึกและส่งข้อความ").click();
     cy.wait(2500);
     cy.get('button[class="btn cms-tabee-red-white"]').click();
 
-    cy.get('div[class="info-container-document-adjunct"]')
-      .eq(1)
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+    cy.get('div[id="radio-slots-admin-approve_adjuct_2"]')
+      .find('div[class="wait-approve"]')
       .eq(1)
       .click();
     cy.get("button").contains("บันทึกข้อความ").click();
     cy.wait(2500);
     cy.get('button[class="btn cms-tabee-red-white"]').click();
 
-    cy.get('div[class="info-container-document-adjunct"]')
-      .eq(2)
-      .find('div[id="radio-slots-admin-approve_adjuct_3"]')
-      .find('div[class="custom-control custom-control-inline custom-radio"]')
+    cy.get('div[id="radio-slots-admin-approve_adjuct_3"]')
+      .find('label[class="custom-control-label"]')
       .eq(1)
       .click();
-    cy.wait(2500);
+    cy.get('i[class="ic la la-plus-circle"]').click();
+    cy.get('input[placeholder="ชื่อ-นามสกุล"]').type("เดฟ จีโอ");
     cy.get("button").contains("บันทึกผล").click();
     cy.wait(2500);
     cy.get('button[class="btn cms-tabee-red-white"]').click();
@@ -701,5 +680,13 @@ describe("Test Degree Certificated", () => {
     cy.get("button").contains("แจ้งสมาชิก").click();
     cy.wait(2500);
     cy.get('button[class="btn cms-tabee-red-white"]').click();
+  });
+
+  it("payment ", () => {
+    cy.visit("/degree_certification/Vertify");
+    cy.contains("ชื่อมหาวิทยาลัย").type("มหาวิทยาลัยปทุมธานี");
+    cy.get('div[class="menu visible"]').click();
+    cy.get('input[type="text"]').eq(1).type("0632122444");
+    cy.get('div[class="button-items-right clickable"]').click();
   });
 });
