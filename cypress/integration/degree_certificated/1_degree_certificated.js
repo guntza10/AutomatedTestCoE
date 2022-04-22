@@ -478,5 +478,7 @@ describe("Test Degree Certificated", () => {
       .contains("ยืนยันการอัปโหลดเอกสาร ")
       .click();
     cy.wait(10000);
+
+    cy.get('div[class="button-items-right clickable"]').click();
   });
 });
