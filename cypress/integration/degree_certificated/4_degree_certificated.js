@@ -37,17 +37,14 @@ describe("Test Degree Certificated", () => {
     cy.get('button[class="filter-btn"]').click();
     cy.get('select[class="custom-select"]').select("1");
     cy.get('button[class="btn-add-inspector"]').click();
-
     cy.get('input[placeholder="Search ชื่อ"]').type("ชิงชัย");
     cy.get('button[class="filter-btn"]').click();
     cy.get('select[class="custom-select"]').select("2");
     cy.get('button[class="btn-add-inspector"]').click();
-
     cy.get('input[placeholder="Search ชื่อ"]').type("สฤ");
     cy.get('button[class="filter-btn"]').click();
     cy.get('select[class="custom-select"]').eq(0).select("3");
     cy.get('button[class="btn-add-inspector"]').eq(0).click();
-
     cy.get('button[class="btn-approve"]').click();
     cy.get('button[class="btn cms-tabee-red-white"]').click();
 
