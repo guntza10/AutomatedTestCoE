@@ -72,7 +72,7 @@ describe("Test Degree Certificated", () => {
     cy.get('input[placeholder="Date Start"]').type("2022-04-22");
     cy.get('input[placeholder="Date Stop"]').type("2022-05-22");
     cy.get('select[class="custom-select"]').eq(0).select("159");
-    cy.get('select[class="custom-select"]').eq(1).select("1157");
+    cy.get('select[class="custom-select"]').eq(1).select(80);
     cy.fixture(`files/test_upload.pdf`, "binary")
       .then(Cypress.Blob.binaryStringToBlob)
       .then((fileContent) => {
@@ -85,5 +85,6 @@ describe("Test Degree Certificated", () => {
         });
       });
     cy.get('button[class="btn-submit"]').click();
+    cy.get('button[class="btn cms-tabee-red-white"]').click();
   });
 });
