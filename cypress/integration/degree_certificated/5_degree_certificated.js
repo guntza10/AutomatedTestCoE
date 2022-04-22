@@ -15,8 +15,8 @@ describe("Test Degree Certificated", () => {
     cy.wait(2500);
 
     cy.get('div[class="button-items-right clickable"]').click();
-
-    cy.get('div[class="button-items-right clickable"]').click();
+    cy.wait(2500);
+    cy.get('div[class="button-items-right clickable"]').last().click();
     cy.get(
       'div[class="button-items-right button-modal-success clickable"]'
     ).click();
