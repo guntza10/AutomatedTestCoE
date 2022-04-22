@@ -224,5 +224,8 @@ describe("Test Degree Certificated", () => {
       .find("div")
       .contains("อนุมัติ")
       .should("be.visible");
+
+    cy.get('div[class="btn coe-red-white"]').contains("ใบรับรอง").click();
+    cy.get('div[class="btn coe-red-white"]').contains("เอกสารรับรอง").click();
   });
 });
