@@ -76,7 +76,7 @@ describe("Test Degree Certificated", () => {
     cy.get('select[class="custom-select"]').eq(0).select(1);
     cy.get('select[class="custom-select"]').eq(1).select(1);
     cy.get('small[class="add-item red-text"]').click();
-    cy.get('input[type="text"]').eq(0).type("test");
+    cy.get('input[type="text"]').eq(3).type("test");
 
     cy.fixture(`files/test_upload.pdf`, "binary")
       .then(Cypress.Blob.binaryStringToBlob)
