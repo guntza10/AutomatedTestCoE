@@ -129,6 +129,7 @@ describe("Test Degree Certificated", () => {
     cy.get('input[placeholder="รหัสไปรษณีย์"]').eq(1).type("12120");
     cy.get('div[class="button-items-right clickable"]').click();
 
+    cy.wait(2500);
     cy.get("a").contains("+เพิ่มรายชื่อ").click();
     cy.wait(5000);
     cy.get("a").contains("+เพิ่มรายชื่อ").click();
@@ -146,6 +147,7 @@ describe("Test Degree Certificated", () => {
     cy.get("select").eq(3).select("2");
     cy.get('div[class="button-items-right clickable"]').click();
 
+    cy.wait(2500);
     cy.get("a").contains("+เพิ่มรายวิชา").click();
     cy.wait(5000);
     cy.get("a").contains("+เพิ่มรายวิชา").click();
@@ -479,6 +481,6 @@ describe("Test Degree Certificated", () => {
       .click();
     cy.wait(10000);
 
-    cy.get('div[class="button-items-right clickable"]').click();
+    cy.get('div[class="button-items-right clickable"]').first().click();
   });
 });
