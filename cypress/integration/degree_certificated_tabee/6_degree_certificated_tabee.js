@@ -31,59 +31,155 @@ describe("Test Degree Certificated", () => {
     });
     cy.wait(2500);
 
-    cy.get('div[class="tab-menu-slide"]')
-      .contains("แบบประเมินสถาบัน")
-      .click();
-    // cy.get('input[placeholder="Search ชื่อ"]').type("ยรรยง");
-    // cy.get('button[class="filter-btn"]').click();
-    // cy.get('select[class="custom-select"]').eq(0).select("1");
-    // cy.get('button[class="btn-add-inspector"]').eq(0).click();
-
-    // cy.get('input[placeholder="Search ชื่อ"]').type("ชิงชัย");
-    // cy.get('button[class="filter-btn"]').click();
-    // cy.get('select[class="custom-select"]').eq(0).select("2");
-    // cy.get('button[class="btn-add-inspector"]').eq(0).click();
-
-    // cy.get('input[placeholder="Search ชื่อ"]').type("สฤ");
-    // cy.get('button[class="filter-btn"]').click();
-    // cy.get('select[class="custom-select"]').eq(0).select("3");
-    // cy.get('button[class="btn-add-inspector"]').eq(0).click();
-
-    // cy.get('button[class="btn-approve"]').click();
-    // cy.get('button[class="btn cms-tabee-red-white"]').click();
-
-    // cy.get('label[class="custom-control-label"]').eq(1).click();
-    // cy.get("button").contains("บันทึกและส่งข้อความ").click();
-    // cy.get('button[class="btn cms-tabee-red-white"]').click();
-    // cy.wait(2500);
-
-
-
-    // cy.get('div[class="tab-menu-slide"]')
-    //   .contains("กำหนดการตรวจเยี่ยมสถาบัน")
-    //   .click();
-    // cy.get('input[placeholder="Date Start"]').type("2022-04-22");
-    // cy.get('input[placeholder="Date Stop"]').type("2022-05-22");
-    // cy.get('select[class="custom-select"]').eq(0).select(1);
-    // cy.get('select[class="custom-select"]').eq(1).select(1);
-    // cy.get('small[class="add-item red-text"]').click();
-    // cy.get('input[type="text"]').eq(0).type("test");
-
+    cy.get('div[class="tab-menu-slide"]').contains("แบบประเมินสถาบัน").click();
+    // cy.get('button[class="upload-btn"]').eq(0).click();
     // cy.fixture(`files/test_upload.pdf`, "binary")
     //   .then(Cypress.Blob.binaryStringToBlob)
     //   .then((fileContent) => {
     //     cy.log("fileContent", fileContent);
-    //     cy.get('input[type="file"]').attachFile({
+    //     cy.get('input[type="file"]').eq(0).attachFile({
     //       fileContent,
     //       filePath: "files/test_upload.pdf",
     //       encoding: "utf-8",
     //       lastModified: new Date().getTime(),
     //     });
     //   });
-    // cy.get('button[class="btn-submit"]').click();
-    // cy.wait(2500);
-    // cy.get('button[class="btn cms-tabee-red-white"]').click();
-    // cy.wait(2500);
+    // cy.wait(5000);
+    // cy.fixture(`files/test_upload.pdf`, "binary")
+    //   .then(Cypress.Blob.binaryStringToBlob)
+    //   .then((fileContent) => {
+    //     cy.log("fileContent", fileContent);
+    //     cy.get('input[type="file"]').eq(1).attachFile({
+    //       fileContent,
+    //       filePath: "files/test_upload.pdf",
+    //       encoding: "utf-8",
+    //       lastModified: new Date().getTime(),
+    //     });
+    //   });
+    // cy.wait(5000);
+    // cy.fixture(`files/test_upload.pdf`, "binary")
+    //   .then(Cypress.Blob.binaryStringToBlob)
+    //   .then((fileContent) => {
+    //     cy.log("fileContent", fileContent);
+    //     cy.get('input[type="file"]').eq(2).attachFile({
+    //       fileContent,
+    //       filePath: "files/test_upload.pdf",
+    //       encoding: "utf-8",
+    //       lastModified: new Date().getTime(),
+    //     });
+    //   });
+    // cy.wait(5000);
+    // cy.get('button[class="btn-cancel"]').click();
 
+    // cy.get('button[class="upload-btn"]').eq(1).click();
+    // cy.fixture(`files/test_upload.pdf`, "binary")
+    //   .then(Cypress.Blob.binaryStringToBlob)
+    //   .then((fileContent) => {
+    //     cy.log("fileContent", fileContent);
+    //     cy.get('input[type="file"]').eq(0).attachFile({
+    //       fileContent,
+    //       filePath: "files/test_upload.pdf",
+    //       encoding: "utf-8",
+    //       lastModified: new Date().getTime(),
+    //     });
+    //   });
+    // cy.wait(5000);
+    // cy.fixture(`files/test_upload.pdf`, "binary")
+    //   .then(Cypress.Blob.binaryStringToBlob)
+    //   .then((fileContent) => {
+    //     cy.log("fileContent", fileContent);
+    //     cy.get('input[type="file"]').eq(1).attachFile({
+    //       fileContent,
+    //       filePath: "files/test_upload.pdf",
+    //       encoding: "utf-8",
+    //       lastModified: new Date().getTime(),
+    //     });
+    //   });
+    // cy.wait(5000);
+    // cy.fixture(`files/test_upload.pdf`, "binary")
+    //   .then(Cypress.Blob.binaryStringToBlob)
+    //   .then((fileContent) => {
+    //     cy.log("fileContent", fileContent);
+    //     cy.get('input[type="file"]').eq(2).attachFile({
+    //       fileContent,
+    //       filePath: "files/test_upload.pdf",
+    //       encoding: "utf-8",
+    //       lastModified: new Date().getTime(),
+    //     });
+    //   });
+    // cy.wait(5000);
+    // cy.get('button[class="btn-cancel"]').click();
+
+    // cy.get('button[class="upload-btn"]').eq(2).click();
+    // cy.fixture(`files/test_upload.pdf`, "binary")
+    //   .then(Cypress.Blob.binaryStringToBlob)
+    //   .then((fileContent) => {
+    //     cy.log("fileContent", fileContent);
+    //     cy.get('input[type="file"]').eq(0).attachFile({
+    //       fileContent,
+    //       filePath: "files/test_upload.pdf",
+    //       encoding: "utf-8",
+    //       lastModified: new Date().getTime(),
+    //     });
+    //   });
+    // cy.wait(5000);
+    // cy.fixture(`files/test_upload.pdf`, "binary")
+    //   .then(Cypress.Blob.binaryStringToBlob)
+    //   .then((fileContent) => {
+    //     cy.log("fileContent", fileContent);
+    //     cy.get('input[type="file"]').eq(1).attachFile({
+    //       fileContent,
+    //       filePath: "files/test_upload.pdf",
+    //       encoding: "utf-8",
+    //       lastModified: new Date().getTime(),
+    //     });
+    //   });
+    // cy.wait(5000);
+    // cy.fixture(`files/test_upload.pdf`, "binary")
+    //   .then(Cypress.Blob.binaryStringToBlob)
+    //   .then((fileContent) => {
+    //     cy.log("fileContent", fileContent);
+    //     cy.get('input[type="file"]').eq(2).attachFile({
+    //       fileContent,
+    //       filePath: "files/test_upload.pdf",
+    //       encoding: "utf-8",
+    //       lastModified: new Date().getTime(),
+    //     });
+    //   });
+    // cy.wait(5000);
+
+    // cy.get('button[class="btn-cancel"]').click();
+
+    cy.get('label[class="custom-control-label"]').eq(0).click();
+    cy.get('input[placeholder="Date Start"]').type("2022-04-21");
+    cy.get('input[type="text"]').eq(0).clear().type("5");
+    cy.get('input[type="text"]').eq(1).clear().type("กท.ว.5");
+    cy.get('input[type="date"]').eq(1).type("2022-04-21");
+    cy.get('input[type="date"]').eq(2).type("2022-04-21");
+    cy.get("select").eq(0).select("2553");
+    cy.get("select").eq(1).select("2562");
+    cy.get("select").eq(2).select("2582");
+    cy.get("select").eq(3).select("2");
+    cy.get('button[class="mb-3 submit-btn"]').click();
+    cy.get('button[class="btn cms-tabee-red-white"]').click();
+    cy.get('button[class="submit-btn-green"]').click();
+    cy.get('button[class="btn cms-tabee-red-white"]').click();
+    cy.wait(2500);
+
+    cy.visit("/tabee/Vertify");
+    cy.contains("ชื่อมหาวิทยาลัย").type("มหาวิทยาลัยปทุมธานี");
+    cy.get('div[class="menu visible"]').click();
+    cy.get('input[type="text"]').eq(1).type("0632122444");
+    cy.get('div[class="button-items-right clickable"]').click();
+    cy.get('tr[class="line-table"]')
+      .eq(0)
+      .find('td[class="text-mg"]')
+      .eq(5)
+      .find("div")
+      .contains("อนุมัติ")
+      .should("be.visible");
+
+    cy.get('div[class="btn coe-red-white"]').contains("ใบรับรอง").click();
+    cy.get('div[class="btn coe-red-white"]').contains("เอกสารรับรอง").click();
   });
 });
