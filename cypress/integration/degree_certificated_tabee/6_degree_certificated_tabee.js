@@ -32,123 +32,123 @@ describe("Test Degree Certificated", () => {
     cy.wait(2500);
 
     cy.get('div[class="tab-menu-slide"]').contains("แบบประเมินสถาบัน").click();
-    // cy.get('button[class="upload-btn"]').eq(0).click();
-    // cy.fixture(`files/test_upload.pdf`, "binary")
-    //   .then(Cypress.Blob.binaryStringToBlob)
-    //   .then((fileContent) => {
-    //     cy.log("fileContent", fileContent);
-    //     cy.get('input[type="file"]').eq(0).attachFile({
-    //       fileContent,
-    //       filePath: "files/test_upload.pdf",
-    //       encoding: "utf-8",
-    //       lastModified: new Date().getTime(),
-    //     });
-    //   });
-    // cy.wait(5000);
-    // cy.fixture(`files/test_upload.pdf`, "binary")
-    //   .then(Cypress.Blob.binaryStringToBlob)
-    //   .then((fileContent) => {
-    //     cy.log("fileContent", fileContent);
-    //     cy.get('input[type="file"]').eq(1).attachFile({
-    //       fileContent,
-    //       filePath: "files/test_upload.pdf",
-    //       encoding: "utf-8",
-    //       lastModified: new Date().getTime(),
-    //     });
-    //   });
-    // cy.wait(5000);
-    // cy.fixture(`files/test_upload.pdf`, "binary")
-    //   .then(Cypress.Blob.binaryStringToBlob)
-    //   .then((fileContent) => {
-    //     cy.log("fileContent", fileContent);
-    //     cy.get('input[type="file"]').eq(2).attachFile({
-    //       fileContent,
-    //       filePath: "files/test_upload.pdf",
-    //       encoding: "utf-8",
-    //       lastModified: new Date().getTime(),
-    //     });
-    //   });
-    // cy.wait(5000);
-    // cy.get('button[class="btn-cancel"]').click();
+    cy.get('button[class="upload-btn"]').eq(0).click();
+    cy.fixture(`files/test_upload.pdf`, "binary")
+      .then(Cypress.Blob.binaryStringToBlob)
+      .then((fileContent) => {
+        cy.log("fileContent", fileContent);
+        cy.get('input[type="file"]').eq(0).attachFile({
+          fileContent,
+          filePath: "files/test_upload.pdf",
+          encoding: "utf-8",
+          lastModified: new Date().getTime(),
+        });
+      });
+    cy.wait(5000);
+    cy.fixture(`files/test_upload.pdf`, "binary")
+      .then(Cypress.Blob.binaryStringToBlob)
+      .then((fileContent) => {
+        cy.log("fileContent", fileContent);
+        cy.get('input[type="file"]').eq(1).attachFile({
+          fileContent,
+          filePath: "files/test_upload.pdf",
+          encoding: "utf-8",
+          lastModified: new Date().getTime(),
+        });
+      });
+    cy.wait(5000);
+    cy.fixture(`files/test_upload.pdf`, "binary")
+      .then(Cypress.Blob.binaryStringToBlob)
+      .then((fileContent) => {
+        cy.log("fileContent", fileContent);
+        cy.get('input[type="file"]').eq(2).attachFile({
+          fileContent,
+          filePath: "files/test_upload.pdf",
+          encoding: "utf-8",
+          lastModified: new Date().getTime(),
+        });
+      });
+    cy.wait(5000);
+    cy.get('button[class="btn-cancel"]').click();
 
-    // cy.get('button[class="upload-btn"]').eq(1).click();
-    // cy.fixture(`files/test_upload.pdf`, "binary")
-    //   .then(Cypress.Blob.binaryStringToBlob)
-    //   .then((fileContent) => {
-    //     cy.log("fileContent", fileContent);
-    //     cy.get('input[type="file"]').eq(0).attachFile({
-    //       fileContent,
-    //       filePath: "files/test_upload.pdf",
-    //       encoding: "utf-8",
-    //       lastModified: new Date().getTime(),
-    //     });
-    //   });
-    // cy.wait(5000);
-    // cy.fixture(`files/test_upload.pdf`, "binary")
-    //   .then(Cypress.Blob.binaryStringToBlob)
-    //   .then((fileContent) => {
-    //     cy.log("fileContent", fileContent);
-    //     cy.get('input[type="file"]').eq(1).attachFile({
-    //       fileContent,
-    //       filePath: "files/test_upload.pdf",
-    //       encoding: "utf-8",
-    //       lastModified: new Date().getTime(),
-    //     });
-    //   });
-    // cy.wait(5000);
-    // cy.fixture(`files/test_upload.pdf`, "binary")
-    //   .then(Cypress.Blob.binaryStringToBlob)
-    //   .then((fileContent) => {
-    //     cy.log("fileContent", fileContent);
-    //     cy.get('input[type="file"]').eq(2).attachFile({
-    //       fileContent,
-    //       filePath: "files/test_upload.pdf",
-    //       encoding: "utf-8",
-    //       lastModified: new Date().getTime(),
-    //     });
-    //   });
-    // cy.wait(5000);
-    // cy.get('button[class="btn-cancel"]').click();
+    cy.get('button[class="upload-btn"]').eq(1).click();
+    cy.fixture(`files/test_upload.pdf`, "binary")
+      .then(Cypress.Blob.binaryStringToBlob)
+      .then((fileContent) => {
+        cy.log("fileContent", fileContent);
+        cy.get('input[type="file"]').eq(0).attachFile({
+          fileContent,
+          filePath: "files/test_upload.pdf",
+          encoding: "utf-8",
+          lastModified: new Date().getTime(),
+        });
+      });
+    cy.wait(5000);
+    cy.fixture(`files/test_upload.pdf`, "binary")
+      .then(Cypress.Blob.binaryStringToBlob)
+      .then((fileContent) => {
+        cy.log("fileContent", fileContent);
+        cy.get('input[type="file"]').eq(1).attachFile({
+          fileContent,
+          filePath: "files/test_upload.pdf",
+          encoding: "utf-8",
+          lastModified: new Date().getTime(),
+        });
+      });
+    cy.wait(5000);
+    cy.fixture(`files/test_upload.pdf`, "binary")
+      .then(Cypress.Blob.binaryStringToBlob)
+      .then((fileContent) => {
+        cy.log("fileContent", fileContent);
+        cy.get('input[type="file"]').eq(2).attachFile({
+          fileContent,
+          filePath: "files/test_upload.pdf",
+          encoding: "utf-8",
+          lastModified: new Date().getTime(),
+        });
+      });
+    cy.wait(5000);
+    cy.get('button[class="btn-cancel"]').click();
 
-    // cy.get('button[class="upload-btn"]').eq(2).click();
-    // cy.fixture(`files/test_upload.pdf`, "binary")
-    //   .then(Cypress.Blob.binaryStringToBlob)
-    //   .then((fileContent) => {
-    //     cy.log("fileContent", fileContent);
-    //     cy.get('input[type="file"]').eq(0).attachFile({
-    //       fileContent,
-    //       filePath: "files/test_upload.pdf",
-    //       encoding: "utf-8",
-    //       lastModified: new Date().getTime(),
-    //     });
-    //   });
-    // cy.wait(5000);
-    // cy.fixture(`files/test_upload.pdf`, "binary")
-    //   .then(Cypress.Blob.binaryStringToBlob)
-    //   .then((fileContent) => {
-    //     cy.log("fileContent", fileContent);
-    //     cy.get('input[type="file"]').eq(1).attachFile({
-    //       fileContent,
-    //       filePath: "files/test_upload.pdf",
-    //       encoding: "utf-8",
-    //       lastModified: new Date().getTime(),
-    //     });
-    //   });
-    // cy.wait(5000);
-    // cy.fixture(`files/test_upload.pdf`, "binary")
-    //   .then(Cypress.Blob.binaryStringToBlob)
-    //   .then((fileContent) => {
-    //     cy.log("fileContent", fileContent);
-    //     cy.get('input[type="file"]').eq(2).attachFile({
-    //       fileContent,
-    //       filePath: "files/test_upload.pdf",
-    //       encoding: "utf-8",
-    //       lastModified: new Date().getTime(),
-    //     });
-    //   });
-    // cy.wait(5000);
+    cy.get('button[class="upload-btn"]').eq(2).click();
+    cy.fixture(`files/test_upload.pdf`, "binary")
+      .then(Cypress.Blob.binaryStringToBlob)
+      .then((fileContent) => {
+        cy.log("fileContent", fileContent);
+        cy.get('input[type="file"]').eq(0).attachFile({
+          fileContent,
+          filePath: "files/test_upload.pdf",
+          encoding: "utf-8",
+          lastModified: new Date().getTime(),
+        });
+      });
+    cy.wait(5000);
+    cy.fixture(`files/test_upload.pdf`, "binary")
+      .then(Cypress.Blob.binaryStringToBlob)
+      .then((fileContent) => {
+        cy.log("fileContent", fileContent);
+        cy.get('input[type="file"]').eq(1).attachFile({
+          fileContent,
+          filePath: "files/test_upload.pdf",
+          encoding: "utf-8",
+          lastModified: new Date().getTime(),
+        });
+      });
+    cy.wait(5000);
+    cy.fixture(`files/test_upload.pdf`, "binary")
+      .then(Cypress.Blob.binaryStringToBlob)
+      .then((fileContent) => {
+        cy.log("fileContent", fileContent);
+        cy.get('input[type="file"]').eq(2).attachFile({
+          fileContent,
+          filePath: "files/test_upload.pdf",
+          encoding: "utf-8",
+          lastModified: new Date().getTime(),
+        });
+      });
+    cy.wait(5000);
 
-    // cy.get('button[class="btn-cancel"]').click();
+    cy.get('button[class="btn-cancel"]').click();
 
     cy.get('label[class="custom-control-label"]').eq(0).click();
     cy.get('input[placeholder="Date Start"]').type("2022-04-21");
